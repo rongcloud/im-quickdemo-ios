@@ -17,8 +17,7 @@
 @interface LoginVC ()
 
 @property (weak, nonatomic) IBOutlet UITextField *appkeyTextField;
-@property (weak, nonatomic) IBOutlet UITextField *userIdTextField;
-@property (weak, nonatomic) IBOutlet UITextField *secretTextField;
+@property (weak, nonatomic) IBOutlet UITextField *tokenTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
@@ -42,17 +41,13 @@
     if (appKey.length > 0) {
         self.appkeyTextField.text = appKey;
     } else {
-        self.appkeyTextField.text = @"p5tvi9dst19k4"; //@"sfci50a7sxn8i";
+        self.appkeyTextField.text = ;
     }
-    NSString *secret = [AppGlobalConfig shareInstance].secret;
-    if (secret.length > 0) {
-        self.secretTextField.text = secret;
+    NSString *token = [AppGlobalConfig shareInstance].token;
+    if (token.length > 0) {
+        self.tokenTextField.text = token;
     } else {
-        self.secretTextField.text = @"EXCZVCZaJDMi";//"@"IPKkxgvlHuBX";
-    }
-    NSString *userId = [AppGlobalConfig shareInstance].userId;
-    if (userId.length > 0) {
-        self.userIdTextField.text = userId;
+        self.tokenTextField.text =
     }
 }
 
@@ -66,67 +61,22 @@
         [RCAlertView showAlertController:@"标题" message:@"appkey不能为空" cancelTitle:@"确定" inViewController:self];
         return;
     }
-    if (self.secretTextField.text.length == 0) {
-        [RCAlertView showAlertController:@"标题" message:@"secret不能为空" cancelTitle:@"确定" inViewController:self];
+    if (self.tokenTextField.text.length == 0) {
+        [RCAlertView showAlertController:@"标题" message:@"token不能为空" cancelTitle:@"确定" inViewController:self];
         return;
     }
-    if (self.userIdTextField.text.length == 0) {
-        [RCAlertView showAlertController:@"标题" message:@"userId不能为空" cancelTitle:@"确定" inViewController:self];
-        return;
-    }
-    
-    NSString *appKey = [AppGlobalConfig shareInstance].appKey;
-    NSString *secret = [AppGlobalConfig shareInstance].secret;
-    NSString *userId = [AppGlobalConfig shareInstance].userId;
-    
-    BOOL isEqualAppKey = [appKey isEqualToString:self.appkeyTextField.text];
-    BOOL isEqualSecret = [secret isEqualToString:self.secretTextField.text];
-    BOOL isEqualUserId = [userId isEqualToString:self.userIdTextField.text];
-    
-    if (!isEqualAppKey) {
-        [[AppGlobalConfig shareInstance] setAppKey:self.appkeyTextField.text];
-    }
-    
-    if (!isEqualSecret) {
-        [[AppGlobalConfig shareInstance] setSecret:self.secretTextField.text];
-    }
-    
-    if (!isEqualUserId) {
-        [[AppGlobalConfig shareInstance] setUserId:self.userIdTextField.text];
-    }
+
+    [[AppGlobalConfig shareInstance] setAppKey:self.appkeyTextField.text];
+    [[AppGlobalConfig shareInstance] setToken:self.tokenTextField.text];
+
     // 初始化 SDK
     [[RCIM sharedRCIM] initWithAppKey:self.appkeyTextField.text];
     // 注册自定义消息
     [[RCCoreClient sharedCoreClient] registerMessageType:[CustomMessage class]];
     [[RCCoreClient sharedCoreClient] registerMessageType:[CustomMediaMessage class]];
 
-//    NSString *token = @"1oy/TekVhIPws2iTCpF9f03HZyCletBreXUUzEaOdJE=@9xjk.cn.rongnav.com;9xjk.cn.rongcfg.com";
-    NSString *token = [AppGlobalConfig shareInstance].token;
     [self configRongIMSDK];
-    
-    
-    if (token.length > 0 && isEqualAppKey && isEqualSecret && isEqualUserId) {
-        [self connectIM:token];
-    } else {
-        // 获取 token
-        __weak typeof(self) weakSelf = self;
-        NSString *name = [NSString stringWithFormat:@"用户%@", self.userIdTextField.text];
-        NSDictionary *parameters = @{@"userId":self.userIdTextField.text, @"name":name, @"portraitUri":@""};
-        [NetWorkHandler startRequestMethod:POST parameters:parameters url:URL_GetToken success:^(id  _Nonnull responseObject) {
-            NSString *token = [NSString stringWithFormat:@"%@", responseObject[@"token"]];
-            if (token.length <= 0) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [RCAlertView showAlertController:@"标题" message:@"token不能为空" cancelTitle:@"确定" inViewController:self];
-                });
-            } else {
-                [[AppGlobalConfig shareInstance] setToken:token];
-                [weakSelf connectIM:token];
-            }
-       
-        } failure:^(NSError * _Nonnull error) {
-            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"获取token失败 %@", error.localizedDescription]];
-        }];
-    }
+    [self connectIM:self.tokenTextField.text];
 }
 
 - (void)connectIM:(NSString *)token {

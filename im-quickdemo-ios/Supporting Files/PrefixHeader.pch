@@ -15,7 +15,6 @@
 #import <IQKeyboardManager.h>
 #import "AppGlobalConfig.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "NetWorkHandler.h"
 #import <Masonry/Masonry.h>
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -32,16 +31,5 @@
  */
 #define RCDCustomMessageTypeIdentifier @"RCD:CustomMsg"
 #define RCDCustomMediaMessageTypeIdentifier @"RCD:CustomMediaMsg"
-
-#define URL_GetToken  @"user/getToken.json"
-#define URL_CreateGroup  @"/group/create.json"
-#define URL_JoinGroup    @"/group/join.json"
-#define URL_QuitGroup    @"/group/quit.json"
-#define URL_QueryGroupMember   @"/group/user/query.json"
-
-//超级群
-#define URL_CreateUltraGroup  @"/ultragroup/create.json" //创建超级群
-#define URL_CreateUltraGroupChannelToken  @"/ultragroup/channel/create.json" //创建频道
-#define URL_JoinUltraGroup  @"/ultragroup/join.json" //加入超级群
 
 #endif /* PrefixHeader_pch */

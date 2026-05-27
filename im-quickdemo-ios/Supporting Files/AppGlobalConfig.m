@@ -47,20 +47,6 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"token"];
 }
 
-- (void)setSecret:(NSString * _Nonnull)secret{
-    if (secret.length <=0) {return;}
-    [[NSUserDefaults standardUserDefaults] setObject:secret forKey:@"secret"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (NSString *)secret{
-    return [[NSUserDefaults standardUserDefaults] objectForKey:@"secret"];
-}
-
-- (void)removeSecret{
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"secret"];
-}
-
 - (void)setUserId:(NSString *)userId{
     if (userId.length <=0) {return;}
     [[NSUserDefaults standardUserDefaults] setObject:userId forKey:@"userId"];
@@ -113,48 +99,6 @@
 }
 - (NSString *)fileServer{
     return [[NSUserDefaults standardUserDefaults] objectForKey:@"fileServer"];
-}
-
-#pragma mark - GROUP
-- (NSString *)groupId {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:@"groupId"];
-}
-- (void)setGroupId:(NSString *)groupId {
-    if (groupId.length <= 0) {return;}
-    [[NSUserDefaults standardUserDefaults] setObject:groupId forKey:@"groupId"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (void)removeGroupId {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"groupId"];
-}
-
-#pragma mark UltraGroup
-- (NSString *)ultraGroupId {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:@"ultraGroupId"];
-}
-- (void)setUltraGroupId:(NSString * _Nonnull)ultraGroupId {
-    if (ultraGroupId.length <= 0) {return;}
-    [[NSUserDefaults standardUserDefaults] setObject:ultraGroupId forKey:@"ultraGroupId"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (void)removeUltraGroupId {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"ultraGroupId"];
-}
-
-- (NSString *)channelId {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:@"channelId"];
-}
-
-- (void)setChannelId:(NSString * _Nonnull)channelId {
-    if (channelId.length <= 0) {return;}
-    [[NSUserDefaults standardUserDefaults] setObject:channelId forKey:@"channelId"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (void)removeChannelId {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"channelId"];
 }
 
 @end

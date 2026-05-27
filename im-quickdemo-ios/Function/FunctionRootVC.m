@@ -8,9 +8,7 @@
 #import "FunctionRootVC.h"
 #import "TextViewCell.h"
 #import "MessageFunctionListVC.h"
-#import "GroupFunctionListVC.h"
 #import "ChatRoomFunctionListVC.h"
-#import "UltraGroupFunctionListVC.h"
 
 @interface FunctionRootVC () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -24,9 +22,7 @@
     self.navigationItem.title = @"功能清单";
     self.dataSource = [@[
         @"消息",
-        @"群组",
-        @"聊天室",
-        @"超级群"
+        @"聊天室"
     ] mutableCopy];
     
 }
@@ -58,16 +54,8 @@
             sbId = @"MessageFunctionListVC";
             break;
         case 1:
-            // 群组
-            sbId = @"GroupFunctionListVC";
-            break;
-        case 2:
             // 聊天室
             sbId = @"ChatRoomFunctionListVC";
-            break;
-        case 3:
-            // 超级群
-            sbId = @"UltraGroupFunctionListVC";
             break;
         default:
             break;

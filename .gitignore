@@ -1,11 +1,31 @@
+# Dependencies
 Pods/
-R.generated.swift
-xcuserdata/
-.DS_Store
-*.ipa
-*.dSYM.zip
-node_modules/
-*.xcarchive
 FrameworkPod/
+node_modules/
+
+# Xcode build products and user data
 Build/
-DerivedData
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+*.xcresult
+
+# Swift Package Manager local state
+.build/
+.swiftpm/
+
+# Generated source
+R.generated.swift
+
+# Local analysis tools and macOS metadata
+.understand-anything/
+.DS_Store

@@ -1,30 +1,47 @@
 PODS:
   - IQKeyboardManager (6.5.11)
   - Masonry (1.1.0)
-  - RongCloudIM/ChatRoom (5.38.0):
+  - RongCloudIM (5.42.0):
+    - RongCloudIM/ChatRoom (= 5.42.0)
+    - RongCloudIM/ContactCard (= 5.42.0)
+    - RongCloudIM/CustomerService (= 5.42.0)
+    - RongCloudIM/Discussion (= 5.42.0)
+    - RongCloudIM/IMKit (= 5.42.0)
+    - RongCloudIM/IMLib (= 5.42.0)
+    - RongCloudIM/IMLibCore (= 5.42.0)
+    - RongCloudIM/Location (= 5.42.0)
+    - RongCloudIM/LocationKit (= 5.42.0)
+    - RongCloudIM/PublicService (= 5.42.0)
+    - RongCloudIM/RongSticker (= 5.42.0)
+    - RongCloudIM/Sight (= 5.42.0)
+  - RongCloudIM/ChatRoom (5.42.0):
     - RongCloudIM/IMLibCore
-  - RongCloudIM/CustomerService (5.38.0):
+  - RongCloudIM/ContactCard (5.42.0):
+    - RongCloudIM/IMKit
+  - RongCloudIM/CustomerService (5.42.0):
     - RongCloudIM/IMLibCore
-  - RongCloudIM/Discussion (5.38.0):
+  - RongCloudIM/Discussion (5.42.0):
     - RongCloudIM/IMLibCore
-  - RongCloudIM/IMLib (5.38.0):
+  - RongCloudIM/IMKit (5.42.0):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (5.42.0):
     - RongCloudIM/ChatRoom
     - RongCloudIM/CustomerService
     - RongCloudIM/Discussion
     - RongCloudIM/IMLibCore
     - RongCloudIM/PublicService
-  - RongCloudIM/IMLibCore (5.38.0)
-  - RongCloudIM/Location (5.38.0):
+  - RongCloudIM/IMLibCore (5.42.0)
+  - RongCloudIM/Location (5.42.0):
     - RongCloudIM/IMLibCore
-  - RongCloudIM/PublicService (5.38.0):
-    - RongCloudIM/IMLibCore
-  - RongCloudOpenSource/IMKit (5.38.0):
-    - RongCloudIM/IMLib (= 5.38.0)
-  - RongCloudOpenSource/LocationKit (5.38.0):
+  - RongCloudIM/LocationKit (5.42.0):
+    - RongCloudIM/IMKit
     - RongCloudIM/Location
-    - RongCloudOpenSource/IMKit
-  - RongCloudOpenSource/Sight (5.38.0):
-    - RongCloudOpenSource/IMKit
+  - RongCloudIM/PublicService (5.42.0):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/RongSticker (5.42.0):
+    - RongCloudIM/IMKit
+  - RongCloudIM/Sight (5.42.0):
+    - RongCloudIM/IMKit
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
@@ -33,29 +50,25 @@ PODS:
 DEPENDENCIES:
   - IQKeyboardManager (= 6.5.11)
   - Masonry (= 1.1.0)
-  - RongCloudOpenSource/IMKit (= 5.38.0)
-  - RongCloudOpenSource/LocationKit (= 5.38.0)
-  - RongCloudOpenSource/Sight (= 5.38.0)
+  - RongCloudIM (= 5.42.0)
   - SDWebImage (= 5.11.1)
-  - SVProgressHUD
+  - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManager
     - Masonry
     - RongCloudIM
-    - RongCloudOpenSource
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  RongCloudIM: effdf171c395f2deb39a256d0c683795cc5232c2
-  RongCloudOpenSource: aec6a3ae758332cd63dd5c250cf030dd13f42b40
+  RongCloudIM: a0b3deefb06478adc85506c4b3abfb304f5f9cd5
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7255cdbeb23c25d595f399d3353b989418b222ff
+PODFILE CHECKSUM: 52d615ca21bb7fbce5ea956a069962d9e0f81114
 
 COCOAPODS: 1.16.2

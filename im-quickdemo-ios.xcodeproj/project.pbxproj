@@ -34,6 +34,14 @@
 		83FE662028BCB0C400892F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE661F28BCB0C400892F17 /* Assets.xcassets */; };
 		83FE662628BCB0C400892F17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FE662528BCB0C400892F17 /* main.m */; };
 		88CA44F4D26F45ECACADEA58 /* RCDemoMessageConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F931169BF24F0486287371 /* RCDemoMessageConstants.m */; };
+		A10000010000000000000001 /* RCDemoIMLibCoreFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000110000000000000001 /* RCDemoIMLibCoreFeature.m */; };
+		A10000020000000000000002 /* RCDemoIMLibCoreFeatureCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000120000000000000002 /* RCDemoIMLibCoreFeatureCatalog.m */; };
+		A10000030000000000000003 /* RCDemoIMLibCoreFeatureExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000130000000000000003 /* RCDemoIMLibCoreFeatureExecutor.m */; };
+		A10000040000000000000004 /* RCDemoIMLibCoreParameterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10000140000000000000004 /* RCDemoIMLibCoreParameterViewController.m */; };
+		A20000010000000000000001 /* RCDemoIMLibCoreConversationExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000110000000000000001 /* RCDemoIMLibCoreConversationExecutor.m */; };
+		A20000020000000000000002 /* RCDemoIMLibCoreMessageSendExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000120000000000000002 /* RCDemoIMLibCoreMessageSendExecutor.m */; };
+		A20000030000000000000003 /* RCDemoIMLibCoreMessageOperationExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000130000000000000003 /* RCDemoIMLibCoreMessageOperationExecutor.m */; };
+		A20000040000000000000004 /* RCDemoIMLibCoreMessageHistoryExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = A20000140000000000000004 /* RCDemoIMLibCoreMessageHistoryExecutor.m */; };
 		BFF3AFC688634BE79F5AC001 /* RCDemoNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C4684A1A349A38735879C /* RCDemoNotifications.m */; };
 		E595CA8D98489E8373D40B09 /* Pods_im_quickdemo_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD6CF60BED6F6F5F2DB26C /* Pods_im_quickdemo_ios.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +103,19 @@
 		83FE662428BCB0C400892F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83FE662528BCB0C400892F17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BFFEF5ED8274577ADEC4539 /* RCDemoNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoNotifications.h; sourceTree = "<group>"; };
+		A10000100000000000000001 /* RCDemoIMLibCoreFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoIMLibCoreFeature.h; sourceTree = "<group>"; };
+		A10000100000000000000002 /* RCDemoIMLibCoreFeatureCatalog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoIMLibCoreFeatureCatalog.h; sourceTree = "<group>"; };
+		A10000100000000000000003 /* RCDemoIMLibCoreFeatureExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoIMLibCoreFeatureExecutor.h; sourceTree = "<group>"; };
+		A10000100000000000000004 /* RCDemoIMLibCoreParameterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDemoIMLibCoreParameterViewController.h; sourceTree = "<group>"; };
+		A10000110000000000000001 /* RCDemoIMLibCoreFeature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreFeature.m; sourceTree = "<group>"; };
+		A10000120000000000000002 /* RCDemoIMLibCoreFeatureCatalog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreFeatureCatalog.m; sourceTree = "<group>"; };
+		A10000130000000000000003 /* RCDemoIMLibCoreFeatureExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreFeatureExecutor.m; sourceTree = "<group>"; };
+		A10000140000000000000004 /* RCDemoIMLibCoreParameterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreParameterViewController.m; sourceTree = "<group>"; };
+		A20000100000000000000000 /* RCDemoIMLibCoreFeatureExecutor+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCDemoIMLibCoreFeatureExecutor+Internal.h"; sourceTree = "<group>"; };
+		A20000110000000000000001 /* RCDemoIMLibCoreConversationExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreConversationExecutor.m; sourceTree = "<group>"; };
+		A20000120000000000000002 /* RCDemoIMLibCoreMessageSendExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreMessageSendExecutor.m; sourceTree = "<group>"; };
+		A20000130000000000000003 /* RCDemoIMLibCoreMessageOperationExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreMessageOperationExecutor.m; sourceTree = "<group>"; };
+		A20000140000000000000004 /* RCDemoIMLibCoreMessageHistoryExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoIMLibCoreMessageHistoryExecutor.m; sourceTree = "<group>"; };
 		C80D8FFFBA9E18D4A34FACFA /* Pods-im-quickdemo-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-im-quickdemo-ios.debug.xcconfig"; path = "Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7C4684A1A349A38735879C /* RCDemoNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoNotifications.m; sourceTree = "<group>"; };
 		F8F931169BF24F0486287371 /* RCDemoMessageConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDemoMessageConstants.m; sourceTree = "<group>"; };
@@ -179,8 +200,21 @@
 		837519BF28BE64C30026B38B /* IMLibCore */ = {
 			isa = PBXGroup;
 			children = (
+				A20000210000000000000001 /* Conversation */,
+				A20000220000000000000002 /* MessageSend */,
+				A20000230000000000000003 /* MessageOperation */,
+				A20000240000000000000004 /* MessageHistory */,
 				837519D528BE64C30026B38B /* RCDemoIMLibCoreViewController.h */,
 				837519C428BE64C30026B38B /* RCDemoIMLibCoreViewController.m */,
+				A10000100000000000000001 /* RCDemoIMLibCoreFeature.h */,
+				A10000110000000000000001 /* RCDemoIMLibCoreFeature.m */,
+				A10000100000000000000002 /* RCDemoIMLibCoreFeatureCatalog.h */,
+				A10000120000000000000002 /* RCDemoIMLibCoreFeatureCatalog.m */,
+				A10000100000000000000003 /* RCDemoIMLibCoreFeatureExecutor.h */,
+				A20000100000000000000000 /* RCDemoIMLibCoreFeatureExecutor+Internal.h */,
+				A10000130000000000000003 /* RCDemoIMLibCoreFeatureExecutor.m */,
+				A10000100000000000000004 /* RCDemoIMLibCoreParameterViewController.h */,
+				A10000140000000000000004 /* RCDemoIMLibCoreParameterViewController.m */,
 			);
 			path = IMLibCore;
 			sourceTree = "<group>";
@@ -281,6 +315,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A20000210000000000000001 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				A20000110000000000000001 /* RCDemoIMLibCoreConversationExecutor.m */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		A20000220000000000000002 /* MessageSend */ = {
+			isa = PBXGroup;
+			children = (
+				A20000120000000000000002 /* RCDemoIMLibCoreMessageSendExecutor.m */,
+			);
+			path = MessageSend;
+			sourceTree = "<group>";
+		};
+		A20000230000000000000003 /* MessageOperation */ = {
+			isa = PBXGroup;
+			children = (
+				A20000130000000000000003 /* RCDemoIMLibCoreMessageOperationExecutor.m */,
+			);
+			path = MessageOperation;
+			sourceTree = "<group>";
+		};
+		A20000240000000000000004 /* MessageHistory */ = {
+			isa = PBXGroup;
+			children = (
+				A20000140000000000000004 /* RCDemoIMLibCoreMessageHistoryExecutor.m */,
+			);
+			path = MessageHistory;
+			sourceTree = "<group>";
+		};
 		AB21407D0C8F4ED8A152F9DE /* IM */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,7 +407,7 @@
 				83FE660D28BCB0C100892F17 /* Frameworks */,
 				83FE660E28BCB0C100892F17 /* Resources */,
 				62541168811FE77C719FCEA0 /* [CP] Embed Pods Frameworks */,
-				6568B4885FAA4FCBA30CC247 /* [CP] Copy Pods Resources */,
+				53B6A8221565F3A7C3763E55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,6 +463,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		53B6A8221565F3A7C3763E55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62541168811FE77C719FCEA0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,27 +503,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6568B4885FAA4FCBA30CC247 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-im-quickdemo-ios/Pods-im-quickdemo-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72803B063B09605FBB328615 /* [CP] Check Pods Manifest.lock */ = {
@@ -469,31 +535,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF3AFC688634BE79F5AC001 /* RCDemoNotifications.m in Sources */,
-				88CA44F4D26F45ECACADEA58 /* RCDemoMessageConstants.m in Sources */,
-				837519BB28BE64A90026B38B /* RCDemoSettingsCell.m in Sources */,
-				83751A0228BE64DB0026B38B /* RCDemoPopoverView.m in Sources */,
-				837519DC28BE64C30026B38B /* RCDemoIMLibCoreViewController.m in Sources */,
-				83751A0628BE64DB0026B38B /* RCDemoCustomMessageCell.m in Sources */,
-				837519BC28BE64A90026B38B /* RCDemoActionSheetView.m in Sources */,
-				83751A1628BE64FF0026B38B /* RCDemoIMDataSource.m in Sources */,
 				837519B028BE64790026B38B /* RCDemoConfiguration.m in Sources */,
-				83751A1428BE64FF0026B38B /* RCDemoServerConfigurationViewController.m in Sources */,
-				83751A1828BE64FF0026B38B /* RCDemoConversationConfigurationViewController.m in Sources */,
-				83751A0128BE64DB0026B38B /* RCDemoPopoverAction.m in Sources */,
 				83751A1528BE64FF0026B38B /* RCDemoLoginViewController.m in Sources */,
-				837519BE28BE64A90026B38B /* RCDemoSettingsModel.m in Sources */,
 				837519AF28BE64790026B38B /* RCDemoTabBarController.m in Sources */,
-				83751A0028BE64DB0026B38B /* RCDemoNewConversationViewController.m in Sources */,
-				837519FF28BE64DB0026B38B /* RCDemoConversationListViewController.m in Sources */,
-				83751A0528BE64DB0026B38B /* RCDemoCustomMessage.m in Sources */,
-				837519BD28BE64A90026B38B /* RCDemoSettingsViewController.m in Sources */,
-				83751A1728BE64FF0026B38B /* RCDemoConfigurationViewController.m in Sources */,
 				83FE661528BCB0C100892F17 /* AppDelegate.m in Sources */,
-				83751A0328BE64DB0026B38B /* RCDemoPopoverCell.m in Sources */,
 				83FE662628BCB0C400892F17 /* main.m in Sources */,
+				837519BB28BE64A90026B38B /* RCDemoSettingsCell.m in Sources */,
+				837519BC28BE64A90026B38B /* RCDemoActionSheetView.m in Sources */,
+				837519BD28BE64A90026B38B /* RCDemoSettingsViewController.m in Sources */,
+				837519BE28BE64A90026B38B /* RCDemoSettingsModel.m in Sources */,
+				837519DC28BE64C30026B38B /* RCDemoIMLibCoreViewController.m in Sources */,
+				837519FF28BE64DB0026B38B /* RCDemoConversationListViewController.m in Sources */,
+				83751A0028BE64DB0026B38B /* RCDemoNewConversationViewController.m in Sources */,
+				83751A0128BE64DB0026B38B /* RCDemoPopoverAction.m in Sources */,
+				83751A0228BE64DB0026B38B /* RCDemoPopoverView.m in Sources */,
+				83751A0328BE64DB0026B38B /* RCDemoPopoverCell.m in Sources */,
 				83751A0428BE64DB0026B38B /* RCDemoCustomMediaMessage.m in Sources */,
-				83751A0828BE64DB0026B38B /* RCDemoConversationViewController.m in Sources */,
+				83751A0528BE64DB0026B38B /* RCDemoCustomMessage.m in Sources */,
+				83751A0628BE64DB0026B38B /* RCDemoCustomMessageCell.m in Sources */,
 				83751A0728BE64DB0026B38B /* RCDemoCustomMediaMessageCell.m in Sources */,
+				83751A0828BE64DB0026B38B /* RCDemoConversationViewController.m in Sources */,
+				83751A1428BE64FF0026B38B /* RCDemoServerConfigurationViewController.m in Sources */,
+				83751A1628BE64FF0026B38B /* RCDemoIMDataSource.m in Sources */,
+				83751A1728BE64FF0026B38B /* RCDemoConfigurationViewController.m in Sources */,
+				83751A1828BE64FF0026B38B /* RCDemoConversationConfigurationViewController.m in Sources */,
+				88CA44F4D26F45ECACADEA58 /* RCDemoMessageConstants.m in Sources */,
+				A10000010000000000000001 /* RCDemoIMLibCoreFeature.m in Sources */,
+				A10000020000000000000002 /* RCDemoIMLibCoreFeatureCatalog.m in Sources */,
+				A10000030000000000000003 /* RCDemoIMLibCoreFeatureExecutor.m in Sources */,
+				A10000040000000000000004 /* RCDemoIMLibCoreParameterViewController.m in Sources */,
+				A20000010000000000000001 /* RCDemoIMLibCoreConversationExecutor.m in Sources */,
+				A20000020000000000000002 /* RCDemoIMLibCoreMessageSendExecutor.m in Sources */,
+				A20000030000000000000003 /* RCDemoIMLibCoreMessageOperationExecutor.m in Sources */,
+				A20000040000000000000004 /* RCDemoIMLibCoreMessageHistoryExecutor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,7 +37,7 @@
 #endif
 
     self.appKeyTextField.text = [RCDemoConfiguration shared].appKey ?: @"";
-    self.tokenTextField.text = [RCDemoConfiguration shared].token ?: @"";
+    self.tokenTextField.text = [RCDemoConfiguration shared].token ?: @""; 
     self.tokenTextField.autocorrectionType = UITextAutocorrectionTypeNo;
     self.tokenTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 }
